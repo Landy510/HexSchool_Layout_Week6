@@ -3,6 +3,25 @@ body {
   line-height: 1.5;
 }
 
+button {
+  background-color: $black;
+  color: $white;
+
+  &:hover {
+    color: $yellow;
+  }
+
+  &:disabled {
+    background-color: $gray-500;
+  }
+}
+
+input {
+  border-color: $black;
+  padding: 8px 16px;
+  border-width: 2px;
+}
+
 .font-family-Yeseva-One {
   font-family: $Yeseva-One;
 }
