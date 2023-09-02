@@ -1,0 +1,66 @@
+@import 'src/assets/styles/utils/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'src/assets/styles/variables/variables';
+
+.step-list {
+  display: flex;
+  align-items: center;
+  counter-reset: my-count 0;
+
+  > div:not(:last-of-type) {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+  }
+
+  > div:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    z-index: -1;
+  }
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.step::before {
+  content: counter(my-count);
+  counter-increment: my-count 1;
+  color: $black;
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  border: 1px solid $black;
+  background-color: $global-bg-color;
+}
+
+.step.active::before {
+  background-color: $black;
+  color: $yellow;
+}
+
+
+@include tablet {
+  .step-list {
+
+    > div:not(:last-of-type)::after {
+      top: 24px;
+    }
+  }
+
+  .step::before {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+  }
+}

@@ -1,12 +1,13 @@
-@import '../../../node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/functions';
 @import '../styles/variables/variables';
+@import '../styles/utils/mixins';
 
 // base
 @import '../styles/base/reset';
 @import '../styles/base/iconFonts/iconFonts';
 @import '../styles/base/fontStyle';
 @import '../styles/base/base';
-@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import '../styles/utils/utilities';
 
 

@@ -1,5 +1,6 @@
 import logoImg from '@/assets/images/logo.svg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const Header = () => {
   const [isMobileCollapseShow, setIsMobileCollapseShow] = useState(false);
 
@@ -36,7 +37,7 @@ const Header = () => {
           />
           <button 
             type='button'
-            className='d-inline-block px-3'
+            className='d-inline-block px-3 border-0'
           >
             <i className="icofont-search-1"></i>
           </button>
@@ -49,14 +50,18 @@ const Header = () => {
           <i className="icofont-navigation-menu"></i>
         </button>
         <div className='d-none d-md-flex align-items-center fs-7 ms-auto'>
-          <p className='mb-0 me-5'>
-            <i className="icofont-ui-file me-1"></i> 
-            REGISTER
-          </p>
-          <p className='mb-0'>
-            <i className="icofont-ui-user me-1"></i> 
-            LOGIN
-          </p>
+          <Link to={'/register'}>
+            <p className='mb-0 me-5'>
+              <i className="icofont-ui-file me-1"></i> 
+              REGISTER
+            </p>
+          </Link>
+          <Link>
+            <p className='mb-0'>
+              <i className="icofont-ui-user me-1"></i> 
+              LOGIN
+            </p>
+          </Link>
         </div>
       </div>
       <div className={[
@@ -64,14 +69,18 @@ const Header = () => {
         'container-fluid px-3 d-md-none'
       ].join(' ')}>
           <div className="card card-body border-0 px-0 pb-0">
-            <p>
-              <i className="icofont-ui-file me-1"></i> 
-              REGISTER
-            </p>
-            <p className='mb-0'>
-              <i className="icofont-ui-user me-1"></i> 
-              LOGIN
-            </p>
+            <Link to={'/register'}>
+              <p>
+                <i className="icofont-ui-file me-1"></i> 
+                REGISTER
+              </p>
+            </Link>
+            <Link>
+              <p className='mb-0'>
+                <i className="icofont-ui-user me-1"></i> 
+                LOGIN
+              </p>
+            </Link>
           </div>
       </div>
     </nav>
