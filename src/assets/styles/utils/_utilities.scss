@@ -1,13 +1,21 @@
-.font-family-Yeseva-One {
-  font-family: $Yeseva-One;
-}
-
 .font-family-Noto-Serif-TC {
   font-family: $Noto-Serif-TC;
 }
 
+.font-family-Noto-Sans-TC {
+  font-family: $Noto-Sans-TC;
+}
+
+.font-family-Yeseva-One {
+  font-family: $Yeseva-One;
+}
+
 .h-full {
   height: 100%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-width-unset {

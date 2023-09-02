@@ -16,9 +16,14 @@ button {
 }
 
 input {
-  border-color: $black;
+  background-color: $global-bg-color;
   padding: 8px 16px;
   border-width: 2px;
+  width: 100%;
+}
+
+input::placeholder {
+  font-family: $Noto-Sans-TC;
 }
 
 a {

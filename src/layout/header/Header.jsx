@@ -16,7 +16,7 @@ const Header = () => {
             className="d-inline-block align-text-top max-width-unset h-full" 
           />
           <div className='d-none d-md-flex align-items-center ms-4'>
-            <p className='mb-0 me-1 fs-2'>7TAO</p>
+            <p className='mb-0 me-1 fs-2 font-family-Yeseva-One'>7TAO</p>
             <p className='mb-0 fw-bold'>活動訂票網</p>
           </div>
         </a>
@@ -51,13 +51,13 @@ const Header = () => {
         </button>
         <div className='d-none d-md-flex align-items-center fs-7 ms-auto'>
           <Link to={'/register'}>
-            <p className='mb-0 me-5'>
+            <p className='mb-0 me-5 font-family-Yeseva-One'>
               <i className="icofont-ui-file me-1"></i> 
               REGISTER
             </p>
           </Link>
           <Link>
-            <p className='mb-0'>
+            <p className='mb-0 font-family-Yeseva-One'>
               <i className="icofont-ui-user me-1"></i> 
               LOGIN
             </p>
@@ -70,13 +70,13 @@ const Header = () => {
       ].join(' ')}>
           <div className="card card-body border-0 px-0 pb-0">
             <Link to={'/register'}>
-              <p>
+              <p className='font-family-Yeseva-One'>
                 <i className="icofont-ui-file me-1"></i> 
                 REGISTER
               </p>
             </Link>
             <Link>
-              <p className='mb-0'>
+              <p className='mb-0 font-family-Yeseva-One'>
                 <i className="icofont-ui-user me-1"></i> 
                 LOGIN
               </p>

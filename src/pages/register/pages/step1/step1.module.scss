@@ -1,0 +1,13 @@
+@import 'src/assets/styles/utils/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'src/assets/styles/variables/variables';
+
+.title {
+  font-size: $h2-font-size;
+}
+
+@include tablet {
+  .title {
+    font-size: $xl-font-size;
+  }
+}
