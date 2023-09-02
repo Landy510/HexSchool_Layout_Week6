@@ -3,9 +3,11 @@
 
 // base
 @import '../styles/base/reset';
+@import '../styles/base/iconFonts/iconFonts';
 @import '../styles/base/fontStyle';
 @import '../styles/base/base';
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../styles/utils/utilities';
 
 
 // layout
