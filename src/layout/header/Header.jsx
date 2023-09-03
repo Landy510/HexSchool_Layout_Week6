@@ -1,7 +1,7 @@
 import logoImg from '@/assets/images/logo.svg';
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import { Link } from 'react-router-dom';
-const Header = () => {
+const Header = memo(function Header () {
   const [isMobileCollapseShow, setIsMobileCollapseShow] = useState(false);
 
   return (
@@ -85,6 +85,6 @@ const Header = () => {
       </div>
     </nav>
   )
-}
+}) 
 
 export default Header;
