@@ -1,4 +1,4 @@
-import logoImg from '@/assets/images/logo.svg';
+import logoImg from '@/assets/images/Logo.svg';
 import { memo, useState } from 'react';
 import { Link } from 'react-router-dom';
 const Header = memo(function Header () {
