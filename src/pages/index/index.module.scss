@@ -35,6 +35,20 @@
   }
 }
 
+.tilt-card {
+  position: relative;
+
+  .card-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+
+  img {
+    object-fit: cover;
+  }
+}
+
 @include tablet {
   .hero-img {
     height: 518px;

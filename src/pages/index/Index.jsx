@@ -10,6 +10,10 @@ import rectangle5Img from '@/assets/images/Rectangle5.png';
 import rectangle6Img from '@/assets/images/Rectangle6.png';
 import rectangle8Img from '@/assets/images/Rectangle8.png';
 import onlineSectionImg from '@/assets/images/online_section_img.png';
+import tiltCardImg from '@/assets/images/tilt-card1.png';
+import tiltCard2Img from '@/assets/images/tilt-card2.png';
+import tiltCard3Img from '@/assets/images/tilt-card3.png';
+import tiltCard4Img from '@/assets/images/tilt-card4.png';
 import styles from './index.module.scss';
 import Option from './components/option/Option';
 import RecentEventCard from './components/recentEventCard/RecentEventCard';
@@ -209,6 +213,93 @@ const Index = () => {
             </div>
           </div>
       </div>
+    </div>
+    <CustomizedSwiper />
+    <div className='container-xxl px-3 my-6'>
+        <div className="row gy-6">
+          <div className="col-12 col-md-3">
+            <div className={[
+              "border border-dark border-2 p-3 pt-0 mx-5 mx-md-0",
+              styles['tilt-card']
+            ].join(' ')}>
+              <p className={[
+                'd-inline-block mx-auto mb-0 py-3 px-4 bg-white fw-bold',
+                styles['card-title']
+              ].join(' ')}
+              >社群活動</p>
+              <img 
+                src={tiltCardImg } 
+                alt="" 
+                className='my-3'
+              />
+              <p className='fs-5 fw-bold'>無聲派對-閉閉嘴dancing</p>
+            </div>
+          </div>
+          <div className="col-12 col-md-3">
+            <div 
+              className={[
+                "border border-dark border-2 p-3 pt-0 mx-5 mx-md-0",
+                styles['tilt-card']
+              ].join(' ')}
+              style={{transform: 'rotate(2deg)'}}
+            >
+              <p className={[
+                'd-inline-block mx-auto mb-0 py-3 px-4 bg-white fw-bold',
+                styles['card-title']
+              ].join(' ')}
+              >藝文活動</p>
+              <img 
+                src={tiltCard2Img } 
+                alt="" 
+                className='my-3'
+              />
+              <p className='fs-5 fw-bold'>拯救老店大作戰</p>
+            </div>
+          </div>
+          <div className="col-12 col-md-3">
+            <div 
+              className={[
+                "border border-dark border-2 p-3 pt-0 mx-5 mx-md-0",
+                styles['tilt-card']
+              ].join(' ')}
+              style={{transform: 'rotate(-2deg)'}}
+            >
+              <p className={[
+                'd-inline-block mx-auto mb-0 py-3 px-4 bg-white fw-bold',
+                styles['card-title']
+              ].join(' ')}
+              >自我覺察</p>
+              <img 
+                src={tiltCard3Img } 
+                alt="" 
+                className='my-3'
+              />
+              <p className='fs-5 fw-bold'>內觀修行-部落篇</p>
+            </div>
+          </div>
+          <div className="col-12 col-md-3">
+            <div 
+              className={[
+                "border border-dark border-2 p-3 pt-0 mx-5 mx-md-0",
+                styles['tilt-card']
+              ].join(' ')}
+              style={{transform: 'rotate(2deg)'}}
+            >
+              <p className={[
+                'd-inline-block mx-auto mb-0 py-3 px-4 bg-white fw-bold',
+                styles['card-title']
+              ].join(' ')}
+              >聯誼活動</p>
+              <img 
+                src={tiltCard4Img } 
+                alt="" 
+                className='my-3'
+              />
+              <p className='fs-5 fw-bold'>賞櫻野餐</p>
+            </div>
+          </div>
+          
+        </div>
     </div>
     <CustomizedSwiper />
     </>
