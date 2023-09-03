@@ -9,7 +9,10 @@ function App() {
   return (
     <>
       <Header />
-      <main className="container-xxl px-3 py-5">
+      {/* <main className="container-xxl px-3 py-5">
+        <Outlet />
+      </main> */}
+      <main>
         <Outlet />
       </main>
       <Footer />

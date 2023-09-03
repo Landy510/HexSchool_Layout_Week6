@@ -14,10 +14,12 @@ import styles from './index.module.scss';
 import Option from './components/option/Option';
 import RecentEventCard from './components/recentEventCard/RecentEventCard';
 import Badge from './components/badge/Badge';
+import CustomizedSwiper from './components/swiper/CustomizedSwiper';
 
 const Index = () => {
   return (
-    <div>
+    <>
+    <div className="container-xxl px-3 py-5">
       <div className={styles['hero-img']}>
         <h2 className='font-family-Yeseva-One text-white mb-0'>
           19 MAY 
@@ -208,6 +210,9 @@ const Index = () => {
           </div>
       </div>
     </div>
+    <CustomizedSwiper />
+    </>
+    
   )
 }
 
