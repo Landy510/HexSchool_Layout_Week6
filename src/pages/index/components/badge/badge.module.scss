@@ -1,0 +1,15 @@
+@import 'src/assets/styles/utils/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'src/assets/styles/variables/variables';
+
+.badge {
+  border: 1px solid $black;
+  border-left: 4px solid $black;
+  padding: 4px 16px;
+}
+
+@include tablet {
+  .badge {
+    padding: 4px 24px;
+  }
+}

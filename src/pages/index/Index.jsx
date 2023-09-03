@@ -9,9 +9,11 @@ import rectangle4Img from '@/assets/images/Rectangle4.png';
 import rectangle5Img from '@/assets/images/Rectangle5.png';
 import rectangle6Img from '@/assets/images/Rectangle6.png';
 import rectangle8Img from '@/assets/images/Rectangle8.png';
+import onlineSectionImg from '@/assets/images/online_section_img.png';
 import styles from './index.module.scss';
 import Option from './components/option/Option';
 import RecentEventCard from './components/recentEventCard/RecentEventCard';
+import Badge from './components/badge/Badge';
 
 const Index = () => {
   return (
@@ -147,6 +149,63 @@ const Index = () => {
             />
           </div>
         </div>
+      </div>
+      <div className={[
+        'd-flex align-items-center justify-content-between border border-dark border-3 py-4 py-md-5 px-3 px-md-7 mt-7 mt-md-6',
+        styles['recent-section']
+      ].join(' ')}>
+        <span className='font-family-Yeseva-One'>ONLINE</span>
+        <span className='fw-bold'>線上活動</span>
+      </div>
+      <div className="container-fluid px-0 mt-5 mt-md-7">
+          <div className="row">
+            <div className="col-12 col-md-6 d-flex">
+              <img 
+                src={onlineSectionImg} 
+                alt="" 
+                style={{
+                  maxHeight: '317px',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div className="col-12 col-md-6">
+              <p className='fs-2 fw-bold mt-3 mt-md-0 mb-2'>切特居批踢</p>
+              <div className='mb-3 mb-md-7'>
+                <Badge 
+                  text='競賽' 
+                  styleClass={['me-2']}
+                />
+                <Badge 
+                  text='科技' 
+                  styleClass={['me-2']}
+                />
+                <Badge 
+                  text='有趣' 
+                  styleClass={['me-2']}
+                />
+              </div>
+              <p className='font-family-Noto-Sans-TC mb-3 mb-md-7'>
+                最近網路上很流行的AI程式 ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。 <br />
+                這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。 <br />
+                該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
+              </p>
+              <button 
+                type='button'
+                className={
+                  [
+                    'btn bg-dark text-white d-block w-full py-2 rounded-0 font-family-Noto-Sans-TC',
+                  ].join(' ')
+                }
+                style={{
+                  fontSize: '20px'
+                }}
+              >
+                查看活動詳情
+                <i className="icofont-double-right"></i>
+              </button>
+            </div>
+          </div>
       </div>
     </div>
   )
