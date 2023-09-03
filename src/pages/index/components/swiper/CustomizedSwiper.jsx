@@ -7,7 +7,7 @@ const CustomizedSwiper = () => {
 
   useEffect(() => {
     swiperRef.current = new Swiper(".mySwiper", {
-      speed: 3000,
+      speed: 5000,
       slidesPerView: "auto", // 參考解答，解決內文折行問題
       autoplay: {
         delay: 0, // 參考解答，解決 slide 與 slide 之間會有一小段時間停滯的問題

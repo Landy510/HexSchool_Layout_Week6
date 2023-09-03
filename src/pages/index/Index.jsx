@@ -302,6 +302,112 @@ const Index = () => {
         </div>
     </div>
     <CustomizedSwiper />
+    <div className="container-xxl px-3 my-6">
+      <div className='row gx-0'>
+        <div className="col-12 col-md-6">
+          <div className='border border-dark border-3 mb-5 mb-md-0'>
+            <p className='fs-4 fw-bold border border-3 border-dark border-top-0 border-start-0 border-end-0 mb-0 py-3 ps-4'>#FOLLOW US</p>
+            <div className='py-4 px-3'>
+              <p className='mb-4 font-family-Noto-Sans-TC'>
+                想第一時間獲得新奇有趣的活動資訊？
+                追蹤我們的社群吧！
+                也歡迎你聯繫我們，提供好玩有趣的活動企劃。
+              </p>
+              <p>
+                <i 
+                  className="icofont-ui-email d-inline-block bg-dark text-white me-4"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    textAlign: 'center',
+                    lineHeight: '32px'
+                  }}
+                ></i>
+                <a 
+                  href="mailto:7tao.event@gmail.com"
+                  className='font-family-Noto-Sans-TC'
+                >7tao.event@gmail.com</a>
+              </p>
+              <p>
+                <i 
+                  className="icofont-phone d-inline-block bg-dark text-white me-4"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    textAlign: 'center',
+                    lineHeight: '32px'
+                  }}
+                ></i>
+                <a 
+                  href="tel:09123123123"
+                  className='font-family-Noto-Sans-TC'
+                >09123123123</a>
+              </p>
+              <p className='mb-0'>
+                <i 
+                  className="icofont-facebook d-inline-block bg-dark text-white me-4"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    textAlign: 'center',
+                    lineHeight: '32px'
+                  }}
+                ></i>
+                <a 
+                  href="#"
+                  className='font-family-Noto-Sans-TC'
+                >7TAO七逃</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 d-flex flex-column">
+          <form 
+              onSubmit={e => e.preventDefault()}
+              className={[
+                'd-flex flex-column flex-grow-1',
+                styles['subscribe-section']
+              ].join(' ')}
+            >
+              <p className='fs-4 fw-bold border border-3 border-dark border-top-0 border-start-0 border-end-0 mb-0 py-3 ps-4'>#SUBSCRIBE US</p>
+              <div className='py-4 px-3 flex-grow-1'>
+                <p className='mb-4 font-family-Noto-Sans-TC'>
+                  訂閱電子報送折價券！ <br />
+                  定期精選文章資訊及最新優惠資訊， <br />
+                  還不通通給我訂閱起來？
+                </p>
+                <input 
+                  type="email" 
+                  placeholder='輸入Email'
+                />
+              </div>
+              <button 
+                  type='button'
+                  className={
+                    [
+                      'btn bg-dark text-white d-block w-full py-2 rounded-0 font-family-Noto-Sans-TC',
+                    ].join(' ')
+                  }
+                  style={{
+                    fontSize: '20px'
+                  }}
+                >
+                  確認訂閱
+                  <i className="icofont-double-right"></i>
+              </button>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div 
+      className={[
+        'border border-dark border-3 border-start-0 border-end-0 border-bottom-0',
+        styles['last-section']
+      ].join(' ')}
+    >
+      <p className='fw-bold text-center'>此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+      <p className='fw-bold text-center'>——我也不知道誰說的</p>
+    </div>
     </>
     
   )
