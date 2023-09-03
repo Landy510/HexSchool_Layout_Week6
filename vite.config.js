@@ -10,4 +10,5 @@ export default defineConfig({
     }
   },
   plugins: [react()],
+  base: '/HexSchool_layout_Week6/'
 })
