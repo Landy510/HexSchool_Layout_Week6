@@ -1,0 +1,13 @@
+@import 'src/assets/styles/utils/mixins';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'src/assets/styles/variables/variables';
+
+.dateTime {
+  font-size: 32px;
+}
+
+@include tablet {
+  .dateTime {
+    font-size: 48px;
+  } 
+}
